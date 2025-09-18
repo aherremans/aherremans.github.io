@@ -1,0 +1,104 @@
+// =========================
+// Variables
+// =========================
+$background: #feeaec;
+$text-color: #1b2b48;
+$accent: #0044CC;
+$maxwidth: 80em;
+
+// =========================
+// Mixins
+// =========================
+@mixin underline-heading {
+  font-size: 1em;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+// =========================
+// Base Styles
+// =========================
+html, body {
+  background: $background;
+  color: $text-color;
+}
+
+body {
+  margin: 0;
+  font-family: "Garamond";
+  line-height: 1.5;
+  padding: 0em 2%;
+  max-width: $maxwidth;
+}
+
+// =========================
+// Typography
+// =========================
+h1 { font-size: 2em; }
+h2 { font-size: 1.4em; }
+h3, h4, h5, h6 {
+  @include underline-heading;
+}
+
+.post-meta {
+  text-align: right;
+  font-size: 0.9em;
+  color: darken($text-color, 20%);
+}
+
+// =========================
+// Links
+// =========================
+a {
+  color: $accent;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($accent, 15%);
+    border-bottom: 1px solid darken($accent, 15%);
+  }
+}
+
+// =========================
+// Profile section
+// =========================
+.profile {
+  display: block;
+  margin: 2em 0;
+  overflow: hidden;
+
+  img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 1em 0 0;  
+  }
+
+  p {
+    overflow: hidden;    
+    line-height: 1.4;
+  }
+}
+
+// =========================
+// Lists
+// =========================
+ul {
+  list-style-position: inside; // bullets inside the padding area
+  list-style-type: disc;       // default bullet
+  padding-left: 2em;           // indent
+  margin: 1em 0;               // spacing between list and other content
+}
+
+li {
+  margin: 0.1em 0;            // spacing between items
+}
+
+// =========================
+// Lines
+// =========================
+hr {
+  clear: left;           
+  margin-top: 2em;       
+  border: .5px solid $text-color;
+}
