@@ -80,6 +80,17 @@ a {
   }
 }
 
+/* Responsive: on narrow screens, stack image above text */
+@media (max-width: 600px) {
+  .profile img {
+    float: none;          
+    display: block;       
+    margin: 0 auto 1em;   
+    width: 80%;           
+    max-width: 300px;    
+  }
+}
+
 // =========================
 // Lists
 // =========================
