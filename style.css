@@ -50,9 +50,9 @@ a:hover {
   width: 200px;
   height: 200px;
   margin: 0 1em 0 0;
+  object-fit: cover;
 }
 .profile p {
-  overflow: hidden;
   line-height: 1.4;
 }
 
@@ -68,9 +68,28 @@ li {
 }
 
 hr {
-  clear: left;
+  clear: both;
   margin-top: 2em;
   border: 0.5px solid #1b2b48;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    overflow: visible;
+    display: block;
+  }
+  .profile img {
+    float: none !important;
+    display: block;
+    margin: 0 auto 1em;
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    object-fit: cover;
+  }
+  ul {
+    padding-left: 0.4em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
