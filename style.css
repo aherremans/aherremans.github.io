@@ -1,6 +1,6 @@
 html, body {
-  background: #f4e6ce;
-  color: #32353f;
+  background: rgb(246, 229, 198);
+  color: #282f44;
 }
 
 body {
@@ -28,7 +28,7 @@ h3, h4, h5, h6 {
 .post-meta {
   text-align: right;
   font-size: 0.9em;
-  color: rgb(4.8672566372, 5.1592920354, 6.1327433628);
+  color: rgb(2.2222222222, 2.6111111111, 3.7777777778);
 }
 
 a {
@@ -70,7 +70,7 @@ li {
 hr {
   clear: both;
   margin-top: 2em;
-  border: 0.5px solid #32353f;
+  border: 0.5px solid #282f44;
 }
 
 @media (max-width: 600px) {
