@@ -72,21 +72,11 @@ a {
     width: 200px;
     height: 200px;
     margin: 0 1em 0 0;  
+    object-fit: cover;
   }
 
   p {
-    overflow: hidden;    
     line-height: 1.4;
-  }
-}
-
-@media (max-width: 600px) {
-  .profile img {
-    float: none;          
-    display: block;       
-    margin: 0 auto 1em;   
-    width: 80%;           
-    max-width: 300px;    
   }
 }
 
@@ -108,7 +98,23 @@ li {
 // Lines
 // =========================
 hr {
-  clear: left;           
+  clear: both;           
   margin-top: 2em;       
   border: .5px solid $text-color;
+}
+
+// =========================
+// Mobile version
+// =========================
+@media (max-width: 600px) {
+  .profile img {
+    float: none;          
+    display: block;       
+    margin: 0 auto 1em;   
+    width: 80%;           
+    max-width: 300px;    
+  }
+  ul {
+    padding-left: 1em;  
+  }
 }
