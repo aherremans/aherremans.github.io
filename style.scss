@@ -107,14 +107,20 @@ hr {
 // Mobile version
 // =========================
 @media (max-width: 600px) {
+  .profile {
+    overflow: visible;
+    display: block;
+  }
   .profile img {
-    float: none;          
+    float: none !important;          
     display: block;       
     margin: 0 auto 1em;   
     width: 80%;           
     max-width: 300px;    
+    height: auto;
+    object-fit: cover;
   }
   ul {
-    padding-left: 1em;  
+    padding-left: .2em;  
   }
 }
